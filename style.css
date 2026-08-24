@@ -135,13 +135,59 @@ button {
 
 
 /* =========================
-   Studio
+   Studio Section
    ========================= */
 
 .studio {
     background-color: #ffffff;
 }
 
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 3rem;
+    margin: 0 0 20px;
+}
+
+.section-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.studio-features {
+    width: 100%;
+    max-width: 1100px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+
+    padding: 40px 30px;
+
+    border-top: 1px solid #111;
+}
+
+.feature h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.feature p {
+    line-height: 1.7;
+}
 
 /* =========================
    Services
@@ -153,11 +199,52 @@ button {
 
 
 /* =========================
-   About
+   About the Artist
    ========================= */
 
 .about {
-    background-color: #ffffff;
+    background-color: #f4f0e7;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image {
+    flex: 1;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dfe5d8;
+}
+
+.about-image p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.about-text p {
+    line-height: 1.8;
 }
 
 
@@ -166,32 +253,114 @@ button {
    ========================= */
 
 .portfolio {
-    background-color: #f7f3ea;
+    background-color: #ffffff;
 }
 
+.portfolio-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: 250px;
+
+    gap: 20px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-large {
+    grid-row: span 2;
+}
+
+.portfolio-tall {
+    grid-row: span 2;
+}
+
+.portfolio-placeholder {
+    width: 100%;
+    height: 100%;
+
+    background-color: #dfe5d8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-placeholder span {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 /* =========================
    Location
    ========================= */
 
 .location {
-    background-color: #ffffff;
+    background-color: #dfe5d8;
+}
+
+.location-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.location-info {
+    flex: 1;
+}
+
+.location-info h2 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.location-info > p {
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.location-details {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.location-details h3 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.location-details p {
+    line-height: 1.6;
 }
 
 .map-placeholder {
-    width: 80%;
-    max-width: 900px;
-    height: 400px;
+    flex: 1;
 
-    margin-top: 30px;
+    min-height: 400px;
+
+    background-color: #f4f0e7;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    border: 2px dashed #aaa;
+    justify-content: center;
 }
 
+.map-placeholder span {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 /* =========================
    Booking
