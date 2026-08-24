@@ -9,6 +9,48 @@ html {
 * {
     box-sizing: border-box;
 }
+/* =========================
+   Get Nailed Studio
+   Design System
+   ========================= */
+
+:root {
+    --cream: #f4f0e7;
+    --sage: #dfe5d8;
+    --black: #111111;
+    --white: #ffffff;
+    --muted: #6f746d;
+}
+
+/* =========================
+   Base Styles
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: var(--black);
+    background-color: var(--cream);
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+    padding: 100px 8%;
+}
+
 
 body {
     margin: 0;
@@ -26,13 +68,13 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #f7f3ea;
+    background-color: var(--cream);
     border-bottom: 1px solid #d8d2c5;
     z-index: 1000;
 }
 
 nav {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 
@@ -40,23 +82,32 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #111;
+    color: var(--black);
+
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+    transition: opacity 0.3s ease;
 }
 
+.nav-links a:hover {
+    opacity: 0.6;
+}
 
 /* =========================
    General Sections
@@ -382,4 +433,18 @@ footer {
 
     background-color: #111;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
 }
