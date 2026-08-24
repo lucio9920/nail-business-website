@@ -1,0 +1,1 @@
+console.log("Nail business website loaded successfully!");
