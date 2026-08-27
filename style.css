@@ -73,6 +73,10 @@ header {
     z-index: 1000;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 nav {
     max-width: 1100px;
     margin: 0 auto;
@@ -484,17 +488,152 @@ footer {
     background-color: #111;
     color: #fff;
 }
+/* =========================
+   Mobile Styles
+   ========================= */
 
 @media (max-width: 768px) {
-    nav {
-        padding: 16px 20px;
+
+    section {
+        padding: 70px 20px;
     }
 
-    .nav-links {
+
+    nav {
+    position: relative;
+    padding: 16px 20px;
+}
+
+.logo {
+    font-size: 1.1rem;
+}
+
+.menu-toggle {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: var(--black);
+    border: none;
+
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    background-color: var(--cream);
+
+    border-bottom: 1px solid #d8d2c5;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    width: 100%;
+    padding: 16px 20px;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+    border-top: 1px solid #d8d2c5;
+}
+
+    /* About */
+
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+
+    /* Services */
+
+    .service-category {
+        width: 100%;
+    }
+
+    .service-item {
         gap: 20px;
     }
 
-    .nav-links a {
-        font-size: 0.8rem;
+
+    /* Portfolio */
+
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 220px;
     }
+
+    .portfolio-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portfolio-tall {
+        grid-row: span 2;
+    }
+
+    /* Studio Features */
+
+.studio-features {
+    flex-direction: column;
+    width: 100%;
+}
+
+.studio-feature {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 20px;
+}
+
+
+    /* Location */
+
+    .location-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .location-info {
+        width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+        flex: none;
+    }
+
+
+    /* Location Details */
+
+    .location-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
